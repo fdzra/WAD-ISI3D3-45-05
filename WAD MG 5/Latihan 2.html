@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<htmnl>
+    <head>
+        <title>Siap jadi mentee!</title>
+    </head>
+    <body>
+        <h1>Javascript Can Change Images</h1>
+        <img id="profile.jpeg" onclick="changeImage()" src="siapjadimenteedc.jpg" width="100" height="100">
+        <p>Click the image to change image.</p>
+        <script>
+            function changeImage() {
+                var image = document.getElementById('profile.jpeg');
+                if(image.src.match("siapjadimenteedc")) {
+                    image.src = "profile.jpeg";
+                } else {
+                    image.scr = "siapjadimenteedc.jpeg";
+                }
+            }
+        </script>
+    </body>
+</htmnl>
